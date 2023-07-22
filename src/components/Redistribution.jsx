@@ -8,7 +8,7 @@ function Redistribution() {
         const options = {
             method: "GET"
         };
-        let url = new URL("http://localhost:5000/redistributionI2");
+        let url = new URL("https://backbianca-production.up.railway.app/redistributionI2");
         fetch(url, options) // se hace la consulta 
             .then(response => response.text()) // se obtiene el cuerpo de la respuesta
             .then(data => {

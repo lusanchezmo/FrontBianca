@@ -11,7 +11,7 @@ function Aptos() {
     const options = {
       method: "GET"
     };
-    let url = new URL("http://localhost:5000");
+    let url = new URL("https://backbianca-production.up.railway.app/");
     fetch(url, options) // se hace la consulta 
       .then(response => response.text()) // se obtiene el cuerpo de la respuesta
       .then(data => {
