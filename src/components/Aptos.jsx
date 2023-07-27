@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import BtnApto from './BtnApto';
+import AddApto from './AddApto';
 import { Link } from "react-router-dom";
 
 function Aptos() {
 
   //Array con los apartamentos
   const [aptos,setAptos] = useState([]);
+  const [estadoDialog, setEstadoDialog] = useState(false);
+  const mostrarAddApto = () => {
+    setEstadoDialog(!estadoDialog);
+  }
 
   function getAptos() {
     const options = {
       method: "GET"
     };
-    let url = new URL("https://backbianca-production.up.railway.app/");
+    let url = new URL("http://localhost:5000");
     fetch(url, options) // se hace la consulta 
       .then(response => response.text()) // se obtiene el cuerpo de la respuesta
       .then(data => {
@@ -28,6 +33,7 @@ function Aptos() {
 
   return (
     <div className="App">
+       {estadoDialog && <AddApto mostrarAddApto={mostrarAddApto} />}
       <h1>Redistribución</h1>
       <button>Productos</button>
       <h2>Aptos</h2>
@@ -44,6 +50,7 @@ function Aptos() {
         ))
 
         }
+      <div><button onClick={() => (mostrarAddApto())}>+</button></div>
       </div>
       <h2>Hacer redistribucion</h2>
       <Link to='/redistribution'>
