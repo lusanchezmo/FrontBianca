@@ -24,7 +24,7 @@ function DeleteApto() {
         <h1 className="deleteText">¿Estas seguro que deseas eliminar este apto?</h1>
         <section className="botones" style={{display: 'flex'}}>
         <button className="btnCancelar" >Cancelar</button>
-        <Link style={{background: 'transparent'}} to={{pathname: `/${ingruma}`}} >
+        <Link style={{background: 'transparent'}} to={{pathname: `/FrontBianca/${ingruma}`}} >
             <button className="btnCancelar" onClick={deleteApto} >Eliminar</button>
         </Link>
         </section>
