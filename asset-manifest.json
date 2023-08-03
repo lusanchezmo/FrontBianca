@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FrontBianca/static/css/main.65c927fb.css",
-    "main.js": "/FrontBianca/static/js/main.0842e5de.js",
+    "main.js": "/FrontBianca/static/js/main.4f07c4a7.js",
     "static/js/787.c4e7f8f9.chunk.js": "/FrontBianca/static/js/787.c4e7f8f9.chunk.js",
     "static/media/Back.png": "/FrontBianca/static/media/Back.e95f2c44ae3ddd5bc55a.png",
     "static/media/background.png": "/FrontBianca/static/media/background.60f4c37966cca449f74d.png",
@@ -10,11 +10,11 @@
     "index.html": "/FrontBianca/index.html",
     "static/media/Vector.svg": "/FrontBianca/static/media/Vector.285ebf28d0e48d72d8cfcc0bce0a0a8a.svg",
     "main.65c927fb.css.map": "/FrontBianca/static/css/main.65c927fb.css.map",
-    "main.0842e5de.js.map": "/FrontBianca/static/js/main.0842e5de.js.map",
+    "main.4f07c4a7.js.map": "/FrontBianca/static/js/main.4f07c4a7.js.map",
     "787.c4e7f8f9.chunk.js.map": "/FrontBianca/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65c927fb.css",
-    "static/js/main.0842e5de.js"
+    "static/js/main.4f07c4a7.js"
   ]
 }
