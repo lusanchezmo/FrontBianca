@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/FrontBianca' element={<Home/>} />
-        <Route path='/:ingruma' element={<Aptos/>} />
-        <Route path='/:ingruma/redapto' element={<RedApto/>} />
-        <Route path='/redistribution/:ingruma' element={<Redistribution/>} />
-        <Route path=':ingruma/productos' element={<Products/>} />
+        <Route path='/FrontBianca/:ingruma' element={<Aptos/>} />
+        <Route path='/FrontBianca/:ingruma/redapto' element={<RedApto/>} />
+        <Route path='/FrontBianca/redistribution/:ingruma' element={<Redistribution/>} />
+        <Route path='/FrontBianca/:ingruma/productos' element={<Products/>} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

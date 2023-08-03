@@ -48,7 +48,7 @@ function Aptos() {
       </section>
       <section className='sectionPro'>
         <h1 className="textRedi">Redistribución</h1>
-        <Link to={{pathname: `/${ingruma}/productos`}} > 
+        <Link to={{pathname: `/FrontBianca/${ingruma}/productos`}} > 
           <button className='ButtomPro'><img src={Image} style={{width: "2rem", background: '#1D1B26', paddingRight: '1rem', paddingTop: '0.3rem'}} />
             Productos a
             <br/> redistribuir
@@ -75,7 +75,7 @@ function Aptos() {
       </section>
       <section className='sectionPro'>
         <h2 className='textMakeRedi'>Hacer redistribución</h2>
-        <Link to={{pathname: `/redistribution/${ingruma}`}}>
+        <Link to={{pathname: `/FrontBianca/redistribution/${ingruma}`}}>
           <button className='btnRedistribution'>Redistribution</button>
         </Link>
       </section>
