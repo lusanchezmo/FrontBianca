@@ -9,16 +9,16 @@ import Products from './components/Products';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/FrontBianca'>
       <Routes>
-        <Route path='/FrontBianca' element={<Home/>} />
+        <Route exact path='/' element={<Home/>} />
         <Route path='/FrontBianca/:ingruma' element={<Aptos/>} />
         <Route path='/FrontBianca/:ingruma/redapto' element={<RedApto/>} />
         <Route path='/FrontBianca/redistribution/:ingruma' element={<Redistribution/>} />
         <Route path='/FrontBianca/:ingruma/productos' element={<Products/>} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
   );
 }
 
