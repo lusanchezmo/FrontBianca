@@ -3,7 +3,7 @@ import "../styles/Aptos.css"
 
 function BtnApto(props) {
     return(
-        <Link to={{pathname: `/FrontBianca/${props.apto.ingruma}/redapto`, search: ('?idApto=' + props.apto.idapto) }} >
+        <Link to={{pathname: `/${props.apto.ingruma}/redapto`, search: ('?idApto=' + props.apto.idapto) }} >
             <div className="sectionPro">
                 <button className="btnApto">{props.apto.apto}</button>   
             </div>

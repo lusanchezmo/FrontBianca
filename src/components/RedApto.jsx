@@ -203,7 +203,7 @@ function RedApto() {
             }
             </div>
 
-            <Link to={{pathname: `/FrontBianca/${ingruma}`}}>
+            <Link to={{pathname: `/${ingruma}`}}>
                 <button className='botonListo'>Listo</button>
             </Link>
 
