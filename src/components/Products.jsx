@@ -29,7 +29,7 @@ function Products() {
       const options = {
           method: "POST"
       };
-      let url = new URL("https://backbianca-production.up.railway.app/addColumnProduct/"+nuevoNombre+"/"+ingruma);
+      let url = new URL("https://back-bianca.onrender.com/addColumnProduct/"+nuevoNombre+"/"+ingruma);
       fetch(url, options) // se hace la consulta 
           .then(response => response.text()) // se obtiene el cuerpo de la respuesta
           .then(data => {
@@ -41,7 +41,7 @@ function Products() {
       const options = {
         method: "DELETE"
       };
-      let url = new URL("https://backbianca-production.up.railway.app/deleteColumnProduct/"+produ+"/"+ingruma);
+      let url = new URL("https://back-bianca.onrender.com/deleteColumnProduct/"+produ+"/"+ingruma);
       fetch(url, options) // se hace la consulta 
         .then(response => response.text()) // se obtiene el cuerpo de la respuesta
         .then(data => {
@@ -58,7 +58,7 @@ function Products() {
         const options = {
           method: "GET"
         };
-        let url = new URL("https://backbianca-production.up.railway.app/getProducts/"+ingruma);
+        let url = new URL("https://back-bianca.onrender.com/getProducts/"+ingruma);
         fetch(url, options) // se hace la consulta 
           .then(response => response.text()) // se obtiene el cuerpo de la respuesta
           .then(data => {

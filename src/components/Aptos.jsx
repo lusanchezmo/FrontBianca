@@ -25,7 +25,7 @@ function Aptos() {
     const options = {
       method: "POST"
     };
-    let url = new URL("https://backbianca-production.up.railway.app/"+ingruma);
+    let url = new URL("https://back-bianca.onrender.com/"+ingruma);
     fetch(url, options) // se hace la consulta 
       .then(response => response.text()) // se obtiene el cuerpo de la respuesta
       .then(data => {
